@@ -19,7 +19,7 @@ sudo chown nobody:nogroup /var/log/danted.log
 sudo bash -c 'cat <<EOF > /etc/danted.conf
 logoutput: /var/log/danted.log
 internal: 0.0.0.0 port = 1080
-external: eth0
+external: vnet0
 method: username
 user.privileged: root
 user.notprivileged: nobody
